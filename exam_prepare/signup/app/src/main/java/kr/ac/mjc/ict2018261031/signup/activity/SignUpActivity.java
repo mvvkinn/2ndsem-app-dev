@@ -1,4 +1,4 @@
-package kr.ac.mjc.ict2018261031.signup;
+package kr.ac.mjc.ict2018261031.signup.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import kr.ac.mjc.ict2018261031.signup.R;
 
 public class SignUpActivity extends AppCompatActivity {
     @Override

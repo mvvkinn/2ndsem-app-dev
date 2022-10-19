@@ -1,7 +1,5 @@
-package kr.ac.mjc.ict2018261031.signup;
+package kr.ac.mjc.ict2018261031.signup.activity;
 
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import kr.ac.mjc.ict2018261031.signup.R;
 
 public class MainActivity extends AppCompatActivity {
 

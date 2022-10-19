@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="kr.ac.mjc.ict2018261031.signup">
+    xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- USE THIS FOR FOREGROUND SERVICE -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"></uses-permission>
+
+    <!-- USE THIS TO USE INTERNET -->
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -16,7 +19,7 @@
         android:theme="@style/Theme.SignUp"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,11 +27,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUpActivity"></activity>
-        <activity android:name=".DownloadActivity"></activity>
+        <activity android:name=".activity.SignUpActivity"></activity>
+        <activity android:name=".activity.DownloadActivity"></activity>
+        <activity android:name=".activity.RecyclerActivity"></activity>
+        <activity android:name=".activity.CatTimelineActivity"></activity>
 
-        <service android:name=".ForegroundService"></service>
-        <service android:name=".BackgroundService"></service>
+        <service android:name=".service.ForegroundService"></service>
+        <service android:name=".service.BackgroundService"></service>
 
     </application>
 

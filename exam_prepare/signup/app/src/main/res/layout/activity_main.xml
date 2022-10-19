@@ -7,7 +7,7 @@
     android:gravity="clip_vertical|center_vertical"
     android:orientation="vertical"
     android:padding="80dp"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
     <EditText
         android:id="@+id/et_email"

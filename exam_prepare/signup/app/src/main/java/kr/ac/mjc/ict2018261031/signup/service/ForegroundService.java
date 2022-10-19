@@ -1,4 +1,4 @@
-package kr.ac.mjc.ict2018261031.signup;
+package kr.ac.mjc.ict2018261031.signup.service;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -14,6 +14,9 @@ import androidx.annotation.RequiresApi;
 
 import java.util.Timer;
 import java.util.TimerTask;
+
+import kr.ac.mjc.ict2018261031.signup.activity.DownloadActivity;
+import kr.ac.mjc.ict2018261031.signup.R;
 
 public class ForegroundService extends Service {
     NotificationManager notificationManager;
@@ -42,7 +45,7 @@ public class ForegroundService extends Service {
 
                 if(progress>= 100){
                     timer.cancel();
-                    Intent startIntent = new Intent(ForegroundService.this, DownloadActivity.class);
+                    Intent startIntent = new Intent(ForegroundService.this,DownloadActivity.class);
                     startIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
                     PendingIntent pendingIntent = PendingIntent.getActivity(ForegroundService.this,0,startIntent,PendingIntent.FLAG_IMMUTABLE);
